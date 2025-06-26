@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="index.js"></script> -->
+</head>
+<body>
+
+    <button onclick="increment()">press here!</button>
+    <p id="output">Answer: 0</p>
+
+    <script>
+        let X =10;
+        let Y =5;
+        let Z =X+Y;
+        console.log("Task 1: Z= X + Y is:" ,Z);
+    
+
+    // task 2
+
+
+    Z= X + Y;
+    console.log("Task 2: Z is now:" ,Z);
+
+    //task 3
+
+    Z=X*Y;
+    console.log("Task 3: Z is now:" ,Z);
+
+    //task 4
+    Z = 15 % 9;
+    console.log("Task 4: Z is now:",Z);
+
+    //task 5
+    let Answer = 0;
+    function increment(){
+        Answer +=5; // increment Answer 1 each time the button is clicked
+        console.log("Task 5: Answer is:" , Answer);
+
+        document.getElementById("output").innerHTML = "Answer:" + Answer;
+
+        }
+    
+
+
+
+    </script>
+   
+</body>
+</html>
