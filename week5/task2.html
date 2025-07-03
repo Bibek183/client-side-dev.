@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>Array: print the array each time</h2>
+<div id="output"></div> <!--to display the result-->
+
+<script>
+    // step 1 create an array
+    var styles = ["jazz", "blues"];
+
+    //step 2:function to display an array as a comma-separate
+    function updateOutput(){
+    document.querySelector('#output').innerHTML += styles.join(",")+"<br>"
+        
+
+            }
+    //show initial array
+    updateOutput();
+
+    //step 3: add "rock-roll" to the end of thearray
+    styles.push("Rock-n-Roll");
+    updateOutput(); //shows updated array
+
+    // step 4: change the middle item to "classics"
+    var middleIndex = Math.floor(styles.length / 2);
+
+    styles[middleIndex] = "classics";
+    updateOutput();
+
+    //step 5: remove the first item from the array 
+    styles.shift(); // remove first item 
+    updateOutput(); //display the updated output
+
+    //step 6: add "rap" and "reggae" to the start of the array
+    styles.unshift("rap","reggae");
+    updateOutput(); //display the updated output
+
+
+</script>
+
+</body>
+</html>
